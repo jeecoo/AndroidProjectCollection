@@ -5,6 +5,10 @@
     <string name="calculator">CALCULATOR</string>
     <string name="connect3">Connect 3</string>
     <string name="midterm">Midterm</string>
+    <string name="passing_intents">Passing Intents</string>
+    <string name="fragments">Fragments</string>
+    <string name="menus">Menus</string>
+
 
     <string name="text1">Eren</string>
     <string name="text2">Armin</string>
