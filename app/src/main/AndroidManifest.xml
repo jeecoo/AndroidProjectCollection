@@ -18,6 +18,9 @@
             android:name=".PassingIntentsExercise"
             android:exported="false" />
         <activity
+            android:name=".PassingIntentsExerciseSample"
+            android:exported="false" />
+        <activity
             android:name=".Batch1"
             android:exported="false" />
         <activity
