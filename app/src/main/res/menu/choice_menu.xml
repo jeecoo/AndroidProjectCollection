@@ -15,8 +15,8 @@
                 android:id="@+id/mItemChangeTextColor"
                 android:title="Change Text Color"/>
             <item
-                android:id="@+id/mItemChangeShape"
-                android:title="Change Shape"/>
+                android:id="@+id/mItemRotate"
+                android:title="Rotate Shape"/>
             <item
                 android:id="@+id/mItemChangeSize"
                 android:title="Change Size"/>

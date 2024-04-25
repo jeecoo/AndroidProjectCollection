@@ -18,6 +18,8 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
+import java.util.Random;
+
 public class MenuExercise extends AppCompatActivity {
 
     Button btnChanger;
@@ -28,6 +30,7 @@ public class MenuExercise extends AppCompatActivity {
     int[] newStyle = {Typeface.BOLD, Typeface.ITALIC, Typeface.NORMAL,};
     private int shapeDrawableId;
     private int[] shapes = {R.drawable.shape_default, R.drawable.shape_square};
+    private Random random;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,8 @@ public class MenuExercise extends AppCompatActivity {
         btnChanger = findViewById(R.id.btnTransformingButton);
         btnChanger.setBackgroundColor(Color.WHITE);
         btnChanger.setTextColor(Color.BLACK);
+
+        random = new Random();
     }
 
     @Override
@@ -107,11 +112,13 @@ public class MenuExercise extends AppCompatActivity {
                 changeTextColor();
                 Toast.makeText(this, "Text Color is changed", Toast.LENGTH_SHORT).show();
                 return true;
-//            case R.id.mItemChangeShape:
-//                changeShape(item);
-//                return true;
+            case R.id.mItemRotate:
+                btnChanger.setRotation((float) random.nextInt(360));
+                Toast.makeText(this, "Text Color is changed", Toast.LENGTH_SHORT).show();
+                return true;
             case R.id.mItemChangeSize:
-
+                btnChanger.setScaleX(random.nextInt(2000) / 1000.0f + 0.5f);
+                btnChanger.setScaleY(random.nextInt(2000) / 1000.0f + 0.5f);
                 return true;
             case R.id.mItemReset:
                 resetButton();
