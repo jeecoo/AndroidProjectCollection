@@ -133,6 +133,10 @@ public class MenuExercise extends AppCompatActivity {
 
     private void resetButton() {
         btnChanger.setBackgroundColor(Color.WHITE);
+        btnChanger.setTranslationX(0);
+        btnChanger.setTranslationY(0);
+        btnChanger.setScaleX(1);
+        btnChanger.setScaleY(1);
         //btnChanger.setBackgroundResource(shapes[0]);
         btnChanger.setTextColor(Color.BLACK);
         btnChanger.setTypeface(Typeface.DEFAULT);
