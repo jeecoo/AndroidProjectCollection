@@ -24,6 +24,7 @@
             android:outlineProvider="background"
             android:text="5 Best Tourist Spots in the Universe"
             android:textColor="#E91E63"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <ImageButton
