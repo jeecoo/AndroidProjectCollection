@@ -10,7 +10,7 @@
         android:id="@+id/btnLayoutExercise"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         android:text="@string/layout"
         app:cornerRadius="40dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -107,5 +107,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnFragments" />
+
+    <Button
+        android:id="@+id/btnOpeningMaps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/maps"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMenus" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsExercise">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:outlineProvider="background"
+            android:text="5 Best Tourist Spots in the Universe"
+            android:textColor="#E91E63"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnMap1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/kawasan_streetview" />
+
+        <ImageButton
+            android:id="@+id/btnMap2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/lambug_streetview" />
+
+        <ImageButton
+            android:id="@+id/btnMap3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/boracay_streetview" />
+
+        <ImageButton
+            android:id="@+id/btnMap4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/singapore_streetview" />
+
+        <ImageButton
+            android:id="@+id/btnMap5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/tokyo_streetview" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
