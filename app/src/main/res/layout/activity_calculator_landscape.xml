@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/solution_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="50dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                />
+
+            <EditText
+                android:id="@+id/result_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="70dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:layout_margin="2dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_margin="5dp">-->
+
+<!--&lt;!&ndash;                &lt;!&ndash; All Clear Button &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/btnAllClear"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/poppins_semibold"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="@string/btnAllClear"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="30sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="#042259"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:cornerRadius="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_margin="5dp"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                &lt;!&ndash; Delete Button &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/btnDelete"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/poppins_semibold"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="@string/btnDelete"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="#042259"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:cornerRadius="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_margin="5dp"/>&ndash;&gt;-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnDivide"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="80dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="#FDC500"-->
+<!--                    android:fontFamily="@font/poppins_semibold"-->
+<!--                    android:text="@string/btnDivide"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="30dp"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    app:cornerRadius="80dp" />-->
+
+<!--                &lt;!&ndash; Your existing buttons continue here &ndash;&gt;-->
+
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_margin="2dp">
+
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btn7"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:backgroundTint="#042259"
+                    app:cornerRadius="80dp"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btn8"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:backgroundTint="#042259"
+                    app:cornerRadius="80dp"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:id="@+id/btn9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btn9"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:backgroundTint="#042259"
+                    app:cornerRadius="80dp"
+                    android:layout_margin="5dp"/>
+                <!-- All Clear Button -->
+                <Button
+                    android:id="@+id/btnAllClear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#042259"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btnAllClear"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    app:cornerRadius="80dp" />
+
+                <Button
+                    android:id="@+id/btnDivide"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FDC500"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btnDivide"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:layout_margin="5dp"
+                    app:cornerRadius="80dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_margin="2dp">
+
+
+
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btn4"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:backgroundTint="#042259"
+                    app:cornerRadius="80dp"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btn5"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:backgroundTint="#042259"
+                    app:cornerRadius="80dp"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btn6"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:backgroundTint="#042259"
+                    app:cornerRadius="80dp"
+                    android:layout_margin="5dp"/>
+                <!-- Delete Button -->
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btnDelete"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:backgroundTint="#042259"
+                    app:cornerRadius="80dp"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:id="@+id/btnMultiply"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FDC500"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btnMultiply"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:layout_margin="5dp"
+                    app:cornerRadius="80dp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="2dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btn1"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:backgroundTint="#042259"
+                    app:cornerRadius="80dp"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btn2"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:backgroundTint="#042259"
+                    app:cornerRadius="80dp"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btn3"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:backgroundTint="#042259"
+                    app:cornerRadius="80dp"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:id="@+id/btn0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btn0"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:backgroundTint="#042259"
+                    app:cornerRadius="80dp"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:id="@+id/btnSubtract"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FDC500"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btnSubtract"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:layout_margin="5dp"
+                    app:cornerRadius="80dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="2dp"
+                android:orientation="horizontal">
+
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnDecimal"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:fontFamily="@font/poppins_semibold"-->
+<!--                    android:text="@string/btnDecimal"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="30dp"-->
+<!--                    android:backgroundTint="#042259"-->
+<!--                    app:cornerRadius="80dp"-->
+<!--                    android:layout_margin="5dp"/>-->
+                <Button
+                    android:id="@+id/btnDecimal"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btnDecimal"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:backgroundTint="#042259"
+                    app:cornerRadius="80dp"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:id="@+id/btnEquals"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btnEquals"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:backgroundTint="#28282B"
+                    android:layout_margin="5dp"
+                    app:cornerRadius="80dp" />
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FDC500"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/btnAdd"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:layout_margin="5dp"
+                    app:cornerRadius="80dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

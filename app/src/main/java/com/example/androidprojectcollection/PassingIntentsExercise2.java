@@ -36,9 +36,9 @@ public class PassingIntentsExercise2 extends AppCompatActivity {
         textViewBirthdateValue.setText(intent.getStringExtra("bdate_key"));
         textViewPhoneNumberValue.setText(intent.getStringExtra("pnum_key"));
         textViewEmailAddressValue.setText(intent.getStringExtra("eadd_key"));
-        textViewFatherNameValue.setText(intent.getStringExtra("father_fname_key") + ", " + intent.getStringExtra("father_lname_key"));
-        textViewMotherNameValue.setText(intent.getStringExtra("mother_fname_key") + ", " + intent.getStringExtra("mother_lname_key"));
-        textViewAddressValue.setText(intent.getStringExtra("street_address_key") + ", " + intent.getStringExtra("city_key")
+        textViewFatherNameValue.setText(intent.getStringExtra("father_fname_key") + " " + intent.getStringExtra("father_lname_key"));
+        textViewMotherNameValue.setText(intent.getStringExtra("mother_fname_key") + " " + intent.getStringExtra("mother_lname_key"));
+        textViewAddressValue.setText(intent.getStringExtra("street_address_key") + " " + intent.getStringExtra("city_key")
                                     + intent.getStringExtra("state_province_key")+ ", "
                                     + intent.getStringExtra("country_key") + ", "
                                     + intent.getStringExtra("zip_code_key"));

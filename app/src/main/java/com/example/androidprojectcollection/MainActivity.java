@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(MainActivity.this, Batch1.class);
+                Intent intent1 = new Intent(MainActivity.this, ColorMatchingActivity.class);
                 startActivity(intent1);
 
             }

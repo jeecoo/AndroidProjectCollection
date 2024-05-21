@@ -2,8 +2,13 @@ package com.example.androidprojectcollection;
 
 import static com.example.androidprojectcollection.MyCalculator.sequentialCalculate;
 
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +29,20 @@ public class CalculatorActivity extends AppCompatActivity implements View.OnClic
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
+
+//        EdgeToEdge.enable(this);
+//        setContentView(R.layout.activity_calculator);
+//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+//            return insets;
+//        });
+
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            setContentView(R.layout.activity_calculator_landscape);
+        } else {
+            setContentView(R.layout.activity_calculator);
+        }
 
         resultTV = findViewById(R.id.result_tv);
         solutionTV = findViewById(R.id.solution_tv);
